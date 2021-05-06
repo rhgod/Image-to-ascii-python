@@ -18,7 +18,7 @@ def pixels_to_ascii(image):
     characters = "".join([ASCII_CHARS[pixel//25] for pixel in pixels])
     return(characters)
 
-def main(new_width =300):
+def main(new_width =100):
     path = input("Dosyanin ismini girin: \n")
     try:
         image = PIL.Image.open(path)
